@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFF RESTO</title>
+    <link rel="icon" type="image/png" href="pictures/presets/burger_icon.png"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body id="home">
+<!--navbtns-->
+<nav id="navigation"> 
+    <div class="home-logo">
+        <h1 onclick="refresh()"><div class="hlogo-11">BFF</div><div class="hlogo-12">RESTO</div></h1>
+        </div>
+    </div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a onclick="about()">About</a></li>
+        <li><a onclick="menu()">Menu</a></li>
+        <li><a onclick="contact()">Contacts</a></li>
+        <li><a onclick="logout()">Logout</a></li>
+        <li><a class="Ordering" onclick="order()">Order Now</a></li>
+    </ul>
+</nav>
+<!--top-->
+    <div id="home-top">
+        <section id="hero_burger">
+            <div class="section_text">
+                <p class="section_text_p">Welcome to</p>
+                <h1 class="title">BFF-RESTO</h1>
+                <p class="section_text_p">burgers, fries, drinks, and more...</p>
+                <div class="button-container">  
+                    <button class="button btn-color-2" onclick="menu()">Menu List</button>
+                    <button class="button btn-color-1" onclick="order()">Order Now</button>
+                </div>
+        </section>
+    </div>
+<!--featured-->
+    <div id="home-features">
+        <h1 class="fsub-title">Featured Products</h1>
+        <div class="hfeatured">
+            <div class="hfeatured-list">
+                <div class="hf-container">
+                    <img src="pictures/burger/bbq-burger.png" type="image/png" class="hfeatured-img">
+                    <div class="hf-description">
+                        <h2>BBQ Burger</h2>
+                    </div>
+                </div>
+                <div class="hf-container">
+                    <img src="pictures/fries/Loaded Nacho Fries.jpg" class="hfeatured-img">
+                    <div class="hf-description">
+                        <h2>Nacho Fries</h2>
+                    </div>
+                </div>
+                <div class="hf-container">
+                    <img src="pictures/drinks/Strawberry Banana Smoothie.jpg" class="hfeatured-img">
+                    <div class="hf-description">
+                        <h2>Smoothie</h2>
+                    </div>
+                </div>
+                <div class="hf-container">
+                    <img src="pictures/burger/Hawaiian Teriyaki Burger.jpg" class="hfeatured-img">
+                    <div class="hf-description">
+                        <h2>Teriyaki Burger</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <article>Explore our selection of mouthwatering delights, carefully curated to tantalize your taste buds and satisfy your cravings. From savory BBQ Burgers bursting with smoky flavors to crispy Classic Fries that are a timeless favorite, our featured products promise an unforgettable culinary experience. Indulge in refreshing Soft Drinks or elevate your meal with our decadent Deluxe Burger, each crafted with the finest ingredients and a passion for perfection. Dive into a world of flavor and discover your new favorites today.</article>
+    </div>
+<!--background-->
+    <div id="background">
+        <div class="ah-container">
+            <div class="l-details">
+                <h2>ROOTED</h2>
+                <h3>IN OUR JOURNEY</h3>
+                <p>BFF-RESTO's story is a testament to the power of dreams and determination. From its humble beginnings to its current thriving reality, every chapter is marked by passion, friendship, and an unwavering commitment to culinary excellence. What started as a small idea has grown into a beloved destination where community, creativity, and delicious food intersect. <br>
+                <article>With each dish served, BFF-RESTO's roots grow deeper, weaving a story of resilience, innovation, and the enduring power of shared experiences.</article>
+                </p>
+            </div>
+            <div class="background-pic-container">
+                <img src="pictures/presets/rooted.png" class="background-pic">
+            </div>
+        </div>
+        <div class="ah-container">
+            <div class="background-pic-container">
+                <img src="pictures/presets/crafted.png" class="background-pic">
+            </div>
+            <div class="r-details">
+                <h2>CRAFTED</h2>
+                <h3>FOR FOOD LOVERS</h3>
+                <p>BFF-RESTO's story is a testament to the power of dreams and determination. From its humble beginnings to its current thriving reality, every chapter is marked by passion, friendship, and an unwavering commitment to culinary excellence. What started as a small idea has grown into a beloved destination where community, creativity, and delicious food intersect. <br>
+                <article>With each dish served, BFF-RESTO's roots grow deeper, weaving a story of resilience, innovation, and the enduring power of shared experiences.</article>
+                </p>
+            </div>
+        </div>
+        <div class="ah-container">
+            <div class="l-details">
+                <h2>FORGED</h2>
+                <h3>AS FAMILY FAVORITE</h3>
+                <p>BFF-RESTO isn't just a restaurant it's a cherished gathering place where families come together, bonds strengthen, and memories are made. our warm and inviting atmosphere sets the stage for unforgettable moments shared with loved ones, making us a beloved destination for generations. <br>
+                <article>With every meal served, we celebrate the joy of togetherness and the enduring power of family.</article>
+                </p>
+            </div>
+            <div class="background-pic-container">
+                <img src="pictures/presets/forged.png" class="background-pic">
+            </div>
+        </div>
+        <div class="ah-container">
+            <div class="background-pic-container">
+                <img src="pictures/presets/true-star.png" class="background-pic">
+            </div>
+            <div class="r-details">
+                <h2>TRUE STAR</h2>
+                <h3>OUR DEDICATED CREW</h3>
+                <p>Behind the scenes, our dedicated crew shines brightly as the true stars of BFF-RESTO. From the kitchen to the dining room, their passion, professionalism, and genuine care illuminate every dining experience. With a commitment to excellence and a heart for hospitality.<br>
+                <article>Our crew ensures that every guest feels welcomed, valued, and cherished from the moment they walk through our doors.</article>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<!--divider-->
+<div id="divider-b-c">BEST FRIEND FRIES RESTO : FOOD AND DRINKS</div>
+<footer>
+    <div class="footer_container">
+      <div class="footer_items">
+        <div class="fbranding">
+            <div class="footer-logo">
+                <h1><div class="flogo-11">BFF</div><div class="flogo-12">RESTO</div></h1>
+            </div>
+            <p>Every meal is a celebration of friendship and flavor!</p>
+        </div>
+      </div>
+        <div class="footer_items">
+            <div class="footer-items">
+                <div class="fc">
+                    <a href="#home">Home</a>
+                    <a onclick="about()">About</a>
+                    <a onclick="menu()"> Menu </a>
+                    <a onclick="contact()">Contacts</a>
+                    <a onclick="order()">Orders</a>
+                </div>
+            <div class="fc">
+                <a onclick="menu()">Burgers</a>
+                <a onclick="menu()">Fries</a>
+                <a onclick="menu()">Drinks</a>
+                <a onclick="menu()">Salad</a>
+                <a onclick="menu()">Wings</a>
+                <a onclick="menu()">Desserts</a>
+            </div>
+        </div>
+        </div>
+            <div class="footer_items">
+                <div class="footer-credits">
+                    <p>This website consists of six HTML files, a single CSS file, and one JavaScript file. This project was primarily developed for educational purposes, aimed at enhancing our understanding of web development concepts and techniques. Through this hands-on approach, we delve into various aspects of front-end development, including structuring content, styling with CSS, and enhancing interactivity with JavaScript. Our goal is to gain practical experience and proficiency in building dynamic and engaging web applications.</p>
+                    <div class="footer-icons">
+                        <img src="pictures/icons/facebook-icon.svg" type="image/png" class="footer-links">
+                        <img src="pictures/icons/instagram-icon.svg" type="image/png" class="footer-links">
+                        <img src="pictures/icons/reddit-icon.svg" type="image/png" class="footer-links">
+                        <img src="pictures/icons/twitter-icon.svg" type="image/png" class="footer-links">
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>    
+    <hr>
+    <h4>CS 402 || Website Programming and Development || Final Case</h4>
+</footer>
+</html>

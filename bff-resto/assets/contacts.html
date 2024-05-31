@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFF RESTO</title>
+    <link rel="icon" type="image/png" href="pictures/presets/burger_icon.png"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body id="contacts">
+    <!--navbtns-->
+    <nav id="navigation"> 
+        <div class="home-logo">
+            <h1 onclick="refresh()"><div class="hlogo-11">BFF</div><div class="hlogo-12">RESTO</div></h1>
+            </div>
+        </div>
+        <ul>
+            <li><a onclick="home()">Home</a></li>
+            <li><a onclick="about()">About</a></li>
+            <li><a onclick="menu()">Menu</a></li>
+            <li><a href="#contact">Contacts</a></li>
+            <li><a onclick="logout()">Logout</a></li>
+            <li><a class="Ordering" onclick="order()">Order Now</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-item">
+        <div class="contact-form">
+            <h2>Contact us!</h2>
+            <form>
+                <div class="cf-input">
+                    <input type="text" id="name" placeholder="Name" required>
+                </div>
+                <div class="cf-input">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="cf-input">
+                    <textarea id="message" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="follow-form">
+            <h1>Follow us:</h1>
+            <div>
+                Facebook
+                <img src="pictures/icons/facebook-icon.svg" type="image/png" class="ff-links">
+            </div>
+            <div>
+                Instagram
+                <img src="pictures/icons/instagram-icon.svg" type="image/png" class="ff-links">
+            </div>
+            <div>
+                Twitter
+                <img src="pictures/icons/twitter-icon.svg" type="image/png" class="ff-links">
+            </div>
+            <div>
+                Reddit
+                <img src="pictures/icons/reddit-icon.svg" type="image/png" class="ff-links">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<!--divider-->
+<div id="divider-b-c">BEST FRIEND FRIES RESTO : FOOD AND DRINKS</div>
+<footer>
+    <div class="footer_container">
+      <div class="footer_items">
+        <div class="fbranding">
+            <div class="footer-logo">
+                <h1><div class="flogo-11">BFF</div><div class="flogo-12">RESTO</div></h1>
+            </div>
+            <p>Every meal is a celebration of friendship and flavor!</p>
+        </div>
+      </div>
+        <div class="footer_items">
+            <div class="footer-items">
+                <div class="fc">
+                    <a href="#home">Home</a>
+                    <a onclick="about()">About</a>
+                    <a onclick="menu()"> Menu </a>
+                    <a href="#contacts">Contacts</a>
+                    <a onclick="order()">Orders</a>
+                </div>
+            <div class="fc">
+                <a onclick="menu()">Burgers</a>
+                <a onclick="menu()">Fries</a>
+                <a onclick="menu()">Drinks</a>
+                <a onclick="menu()">Salad</a>
+                <a onclick="menu()">Wings</a>
+                <a onclick="menu()">Desserts</a>
+            </div>
+        </div>
+        </div>
+            <div class="footer_items">
+                <div class="footer-credits">
+                    <p>This website consists of six HTML files, a single CSS file, and one JavaScript file. This project was primarily developed for educational purposes, aimed at enhancing our understanding of web development concepts and techniques. Through this hands-on approach, we delve into various aspects of front-end development, including structuring content, styling with CSS, and enhancing interactivity with JavaScript. Our goal is to gain practical experience and proficiency in building dynamic and engaging web applications.</p>
+                    <div class="footer-icons">
+                        <img src="pictures/icons/facebook-icon.svg" type="image/png" class="footer-links">
+                        <img src="pictures/icons/instagram-icon.svg" type="image/png" class="footer-links">
+                        <img src="pictures/icons/reddit-icon.svg" type="image/png" class="footer-links">
+                        <img src="pictures/icons/twitter-icon.svg" type="image/png" class="footer-links">
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>    
+    <hr>
+    <h4>CS 402 || Website Programming and Development || Final Case</h4>
+</footer>
+</html>

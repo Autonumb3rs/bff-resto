@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFF RESTO</title>
+    <link rel="icon" type="image/png" href="pictures/presets/burger_icon.png"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body id="menu">
+    <!--navbtns-->
+    <nav id="navigation"> 
+        <div class="home-logo">
+            <h1 onclick="refresh()"><div class="hlogo-11">BFF</div><div class="hlogo-12">RESTO</div></h1>
+            </div>
+        </div>
+        <ul>
+            <li><a onclick="home()">Home</a></li>
+            <li><a onclick="about()">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a onclick="contact()">Contacts</a></li>
+            <li><a onclick="logout()">Logout</a></li>
+            <li><a class="Ordering" onclick="order()">Order Now</a></li>
+        </ul>
+    </nav>
+    <h1 class="msub-title">Best Deals</h1>
+    <div class="menu-top">
+        <div class="mt-container">
+            <div class="image-container">
+                <img id="menu-image" src="pictures/burger/bbq-burger.png">
+                <button id="menu-button" onclick="menuNext()">Next</button>
+            </div>
+            <div class="menu-container">
+                <h1 id="menu-title">Product</h1>
+                <h2 id="menu-subtitle">Pruduct Subtitle</h2>
+                <p id="menu-text">Product description</p>
+            </div>
+        </div>        
+    </div>
+
+    <div id="menu-bottom">
+        <p class="food-class">Burgers</p>
+        <div class="foods">
+            <div class="mf-container">
+                <div class="food-list">
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/burger/cheese-burger.png">
+                            <div class="layer">
+                                <h3>Classic Cheeseburger</h3>
+                                <p>Dive into spicy perfection with our Buffalo Wings, featuring crispy chicken wings coated in tangy buffalo sauce.</p>
+                            </div>
+                        </div>
+                        <h2 id="open-modal">Classic Cheese Burger</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/burger/bbq-burger.png">
+                            <div class="layer">
+                                <h3>BBQ Bacon Burger</h3>
+                                <p>Our BBQ Bacon Burger is a savory delight featuring a flame-grilled beef patty topped with crispy bacon, smoky barbecue sauce, melted cheddar cheese, and crispy onion rings, all nestled within a toasted brioche bun.</p>
+                            </div>
+                        </div>
+                        <h2>BBQ Bacon Burger</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/burger/Mushroom Swiss Burger.jpg">
+                            <div class="layer">
+                                <h3>Mushroom Swiss Burger</h3>
+                                <p>Experience a gourmet twist with our Mushroom Swiss Burger, featuring a succulent beef patty topped with sautéed mushrooms, melted Swiss cheese, tangy aioli, and fresh arugula, served on a toasted artisanal bun.</p>
+                            </div>
+                        </div>
+                        <h2>Mushroom Swiss Burger</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/burger/Spicy Chicken Burger.jpg">
+                            <div class="layer">
+                                <h3>Spicy Chicken Burger</h3>
+                                <p>Heat up your taste buds with our Spicy Chicken Burger, featuring a crispy chicken fillet coated in spicy seasoning, topped with cool coleslaw, creamy chipotle mayo, crisp lettuce, and ripe tomatoes, served on a toasted brioche bun.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Spicy Chicken Burger</h2>
+                    </div>
+                </div>
+                <div class="food-list">
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/burger/Vegetarian Portobello Burger.jpg">
+                            <div class="layer">
+                                <h3>Vegetarian Portobello Burger</h3>
+                                <p>Our Vegetarian Portobello Burger is a meat-free marvel, featuring a grilled Portobello mushroom cap marinated in savory herbs and spices, topped with melted provolone cheese, roasted red peppers, caramelized onions, and garlic aioli, served on a toasted ciabatta bun.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Vegetarian Portobello Burger</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/burger/Hawaiian Teriyaki Burger.jpg">
+                            <div class="layer">
+                                <h3>Hawaiian Teriyaki Burger</h3>
+                                <p>Transport your taste buds to the tropics with our Hawaiian Teriyaki Burger, featuring a juicy beef patty glazed in tangy teriyaki sauce, topped with grilled pineapple, melted Swiss cheese, crispy bacon, and fresh lettuce, served on a toasted Hawaiian bun.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Hawaiian Teriyaki Burger</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/burger/Southwest Chipotle Burger.jpg">
+                            <div class="layer">
+                                <h3>Southwest Chipotle Burger</h3>
+                                <p>Spice up your meal with our Southwest Chipotle Burger, featuring a zesty beef patty topped with spicy chipotle mayo, roasted corn salsa, melted pepper jack cheese, crisp lettuce, and ripe tomatoes, served on a toasted jalapeño cheddar bun.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Southwest Chipotle Burger</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/burger/Greek Lamb Burger.jpg">
+                            <div class="layer">
+                                <h3>Greek Lamb Burger</h3>
+                                <p>Savor the Mediterranean flavors with our Greek Lamb Burger, featuring a juicy lamb patty seasoned with Greek herbs and spices, topped with creamy tzatziki sauce, feta cheese crumbles, sliced cucumbers, red onions, and crisp lettuce, served on a toasted ciabatta bun.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Greek Lamb Burger</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="food-class">Desserts</p>
+        <div class="foods">
+            <div class="mf-container">
+                <div class="food-list">
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/dessert/Classic Chocolate Brownie.jpg">
+                            <div class="layer">
+                                <h3>Classic Chocolate Brownie</h3>
+                                <p>Indulge in decadence with our Classic Chocolate Brownie, a rich and fudgy treat loaded with chunks of premium chocolate and topped with a drizzle of velvety chocolate sauce.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Classic Chocolate Brownie</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/dessert/New York Cheesecake.jpg">
+                            <div class="layer">
+                                <h3>New York Cheesecake</h3>
+                                <p>Experience the creamy delight of our New York Cheesecake, a velvety smooth confection with a buttery graham cracker crust, topped with a dollop of whipped cream and fresh berries.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>New York Cheesecake</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/dessert/Triple Chocolate Mousse.jpg">
+                            <div class="layer">
+                                <h3>Triple Chocolate Mousse</h3>
+                                <p>Indulge in layers of chocolate bliss with our Triple Chocolate Mousse, featuring silky smooth dark, milk, and white chocolate mousse, topped with a sprinkle of chocolate shavings.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Triple Chocolate Mousse</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/dessert/Classic Apple Pie.jpg">
+                            <div class="layer">
+                                <h3>Classic Apple Pie</h3>
+                                <p>Enjoy a taste of tradition with our Classic Apple Pie, featuring tender apple slices infused with cinnamon and nestled in a flaky pastry crust, served warm with a scoop of creamy vanilla ice cream.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Classic Apple Pie</h2>
+                    </div>
+                </div>
+                <div class="food-list">
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/dessert/Salted Caramel Brownie Sundae.jpg">
+                            <div class="layer">
+                                <h3>Salted Caramel Brownie Sundae</h3>
+                                <p>Indulge in sweet and salty perfection with our Salted Caramel Brownie Sundae, featuring a warm chocolate brownie topped with creamy vanilla ice cream, gooey salted caramel sauce, and a sprinkle of sea salt.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Salted Caramel Brownie Sundae</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/dessert/Lemon Meringue Pie.jpg">
+                            <div class="layer">
+                                <h3>Lemon Meringue Pie</h3>
+                                <p>Refresh your palate with our Lemon Meringue Pie, featuring tangy lemon curd nestled in a flaky pastry crust, topped with fluffy meringue and a sprinkle of lemon zest.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Lemon Meringue Pie</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/dessert/Chocolate Chip Cookie Dough Sundae.jpeg">
+                            <div class="layer">
+                                <h3>Chocolate Chip Cookie Dough Sundae</h3>
+                                <p> Indulge your sweet tooth with our Chocolate Chip Cookie Dough Sundae, featuring creamy vanilla ice cream topped with chunks of chocolate chip cookie dough, gooey chocolate fudge sauce, whipped cream, and a cherry on top.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Classic Cheese Burger</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/dessert/Red Velvet Cupcake.jpg">
+                            <div class="layer">
+                                <h3>Red Velvet Cupcake</h3>
+                                <p>Indulge in luxury with our Red Velvet Cupcake, a velvety delight topped with creamy cream cheese frosting and a sprinkle of red velvet crumbs.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Red Velvet Cupcake</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="food-class">Drinks</p>
+        <div class="foods">
+            <div class="mf-container">
+                <div class="food-list">
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/drinks/Classic Coca-Cola.jpeg">
+                            <div class="layer">
+                                <h3>Classic Coca-Cola</h3>
+                                <p>Quench your thirst with the timeless taste of our Classic Coca-Cola, a refreshing soda made with real cane sugar and served ice-cold.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Classic Coca-Cola</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/drinks/Iced-Caramel-Macchiato.jpg">
+                            <div class="layer">
+                                <h3>Iced Caramel Macchiato</h3>
+                                <p>Dive into spicy perfection with our Buffalo Wings, featuring crispy chicken wings coated in tangy buffalo sauce.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Iced Caramel Macchiato</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/drinks/Refreshing Lemonade.jpg">
+                            <div class="layer">
+                                <h3>Refreshing Lemonade</h3>
+                                <p>Dive into spicy perfection with our Buffalo Wings, featuring crispy chicken wings coated in tangy buffalo sauce.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Refreshing Lemonade</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/drinks/Mint Mojito.jpg">
+                            <div class="layer">
+                                <h3>Mint Mojito</h3>
+                                <p>Sip on a taste of the tropics with our Mint Mojito, featuring fresh mint leaves muddled with lime wedges, simple syrup, and soda water, served over ice.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Mint Mojito</h2>
+                    </div>
+                </div>
+                <div class="food-list">
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/drinks/Strawberry Banana Smoothie.jpg">
+                            <div class="layer">
+                                <h3>Strawberry Banana Smoothie</h3>
+                                <p>Enjoy a taste of paradise with our Strawberry Banana Smoothie, a creamy blend of ripe strawberries, sweet bananas, yogurt, and honey, served chilled.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Strawberry Banana Smoothie</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/drinks/Espresso Martini.jpg">
+                            <div class="layer">
+                                <h3>Espresso Martini</h3>
+                                <p>Energize your night with our Espresso Martini, featuring vodka, coffee liqueur, freshly brewed espresso, and a splash of simple syrup, shaken with ice and strained into a chilled martini glass.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Espresso Martini</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/drinks/Peach Iced Tea.jpg">
+                            <div class="layer">
+                                <h3>Peach Iced Tea</h3>
+                                <p>Dive into spicy perfection with our Buffalo Wings, featuring crispy chicken wings coated in tangy buffalo sauce.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Peach Iced Tea</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/drinks/Coconut Pineapple Smoothie.jpg">
+                            <div class="layer">
+                                <h3>Coconut Pineapple Smoothie</h3>
+                                <p>Escape to the tropics with our Coconut Pineapple Smoothie, a creamy blend of coconut milk, ripe pineapple, banana, and a hint of honey, served chilled.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Coconut Pineapple Smoothie</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="food-class">Fries</p>
+        <div class="foods">
+            <div class="mf-container">
+                <div class="food-list">
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/fries/Classic French Fries.jpg">
+                            <div class="layer">
+                                <h3>Classic French Fries</h3>
+                                <p>Crisp on the outside, fluffy on the inside, our Classic French Fries are the perfect accompaniment to any meal.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Classic French Fries</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/fries/Garlic Parmesan Fries.jpg">
+                            <div class="layer">
+                                <h3>Garlic Parmesan Fries</h3>
+                                <p>Elevate your fry game with our Garlic Parmesan Fries, featuring golden fries tossed in aromatic garlic butter and sprinkled with grated Parmesan cheese.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Garlic Parmesan Fries</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/fries/Chili Cheese Fries.jpg">
+                            <div class="layer">
+                                <h3>Chili Cheese Fries</h3>
+                                <p>Spice up your meal with our Chili Cheese Fries, featuring golden fries smothered in hearty chili and topped with melted cheddar cheese.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Chili Cheese Fries</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/fries/Truffle Parmesan Fries.jpg">
+                            <div class="layer">
+                                <h3>Truffle Parmesan Fries</h3>
+                                <p>Indulge in gourmet goodness with our Truffle Parmesan Fries, featuring crispy fries tossed in luxurious truffle oil and topped with grated Parmesan cheese.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Truffle Parmesan Fries</h2>
+                    </div>
+                </div>
+                <div class="food-list">
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/fries/Sweet Potato Fries.jpg">
+                            <div class="layer">
+                                <h3>Sweet Potato Fries</h3>
+                                <p>Satisfy your sweet and savory cravings with our Sweet Potato Fries, featuring golden fries made from tender sweet potatoes and sprinkled with sea salt.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Sweet Potato Fries</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/fries/Buffalo Ranch Fries.jpg">
+                            <div class="layer">
+                                <h3>Buffalo Ranch Fries</h3>
+                                <p>Spice up your fries with our Buffalo Ranch Fries, featuring crispy fries tossed in zesty buffalo sauce and drizzled with creamy ranch dressing.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Buffalo Ranch Fries</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/fries/Loaded Nacho Fries.jpg">
+                            <div class="layer">
+                                <h3>Loaded Nacho Fries</h3>
+                                <p>Make your taste buds on a flavor adventure with our Loaded Nacho Fries, featuring crispy fries piled high with seasoned ground beef, melted cheddar cheese, diced tomatoes, jalapeños, sour cream, and guacamole.
+
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Loaded Nacho Fries</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/fries/Kimchi Fries.jpg">
+                            <div class="layer">
+                                <h3>Kimchi Fries</h3>
+                                <p>Experience a fusion of flavors with our Kimchi Fries, featuring crispy fries topped with tangy kimchi, spicy gochujang sauce, melted cheese, green onions, and sesame seeds.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Kimchi Fries</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="food-class">Salads</p>
+        <div class="foods">
+            <div class="mf-container">
+                <div class="food-list">
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/salad/Caesar Salad.jpg">
+                            <div class="layer">
+                                <h3>Caesar Salad</h3>
+                                <p>Enjoy a classic favorite with our Caesar Salad, featuring crisp romaine lettuce tossed in creamy Caesar dressing, topped with crunchy croutons and grated Parmesan cheese.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Caesar Salad</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/salad/Greek Salad.jpeg">
+                            <div class="layer">
+                                <h3>Greek Salad</h3>
+                                <p>Transport yourself to the Mediterranean with our Greek Salad, featuring crisp lettuce, juicy tomatoes, cucumbers, red onions, Kalamata olives, and feta cheese, dressed in tangy Greek vinaigrette.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>CGreek Salad</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/salad/Caprese Salad.jpg">
+                            <div class="layer">
+                                <h3>Caprese Salad</h3>
+                                <p>Delight in simplicity with our Caprese Salad, featuring ripe tomatoes, fresh mozzarella cheese, fragrant basil leaves, drizzled with balsamic glaze and extra virgin olive oil.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Caprese Salad</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/salad/Asian-Sesame-Chicken-Salad.jpg">
+                            <div class="layer">
+                                <h3>Asian Sesame Chicken Salad</h3>
+                                <p>Enjoy a taste of Asia with our Asian Sesame Chicken Salad, featuring tender grilled chicken breast, crisp mixed greens, crunchy wonton strips, sliced almonds, and sesame seeds, tossed in sesame ginger dressing.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Asian Sesame Chicken Salad</h2>
+                    </div>
+                </div>
+                <div class="food-list">
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/salad/Cobb Salad.jpg">
+                            <div class="layer">
+                                <h3>Cobb Salad</h3>
+                                <p>Enjoy a hearty meal with our Cobb Salad, featuring crisp lettuce, grilled chicken breast, crispy bacon, hard-boiled eggs, ripe avocado, juicy tomatoes, and crumbled blue cheese, dressed in creamy ranch dressing.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Cobb Salad</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/salad/Southwest Chicken Salad.jpg">
+                            <div class="layer">
+                                <h3>Southwest Chicken Salad</h3>
+                                <p>Spice up your meal with our Southwest Chicken Salad, featuring grilled chicken breast, crisp lettuce, black beans, corn, diced tomatoes, shredded cheddar cheese, crunchy tortilla strips, and creamy avocado ranch dressing.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Southwest Chicken Salad</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/salad/Mediterranean Quinoa Salad.jpg">
+                            <div class="layer">
+                                <h3>Mediterranean Quinoa Salad</h3>
+                                <p>Enjoy a healthy and flavorful meal with our Mediterranean Quinoa Salad, featuring fluffy quinoa tossed with cherry tomatoes, cucumbers, Kalamata olives, red onions, feta cheese, fresh herbs, and lemon vinaigrette.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Mediterranean Quinoa Salad</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/salad/Taco Salad.jpg">
+                            <div class="layer">
+                                <h3>Taco Salad</h3>
+                                <p>Enjoy a fiesta of flavors with our Taco Salad, featuring seasoned ground beef, crisp lettuce, black beans, corn, diced tomatoes, shredded cheddar cheese, crunchy tortilla strips, and zesty salsa ranch dressing.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Taco Salad</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="food-class">Wings</p>
+        <div class="foods">
+            <div class="mf-container">
+                <div class="food-list">
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/wings/Buffalo Wings.jpg">
+                            <div class="layer">
+                                <h3>Buffalo Wings</h3>
+                                <p>Dive into spicy perfection with our Buffalo Wings, featuring crispy chicken wings coated in tangy buffalo sauce.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Buffalo Wings</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/wings/Honey BBQ Wings.jpg">
+                            <div class="layer">
+                                <h3>Honey BBQ Wings</h3>
+                                <p>Sweeten your palate with our Honey BBQ Wings, featuring crispy chicken wings glazed in sticky honey barbecue sauce.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Honey BBQ Wings</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/wings/Garlic Parmesan Wings.jpeg">
+                            <div class="layer">
+                                <h3>Garlic Parmesan Wings</h3>
+                                <p>Dive into spicy perfection with our Buffalo Wings, featuring crispy chicken wings coated in tangy buffalo sauce.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Garlic Parmesan Wings</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/wings/Spicy Mango Habanero Wings.jpg">
+                            <div class="layer">
+                                <h3>Spicy Mango Habanero Wings</h3>
+                                <p>Heat things up with our Spicy Mango Habanero Wings, featuring crispy chicken wings coated in fiery mango habanero sauce.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Spicy Mango Habanero Wings</h2>
+                    </div>
+                </div>
+                <div class="food-list">
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/wings/Teriyaki Wings.jpg">
+                            <div class="layer">
+                                <h3>Teriyaki Wings</h3>
+                                <p>Experience the flavors of Japan with our Teriyaki Wings, featuring crispy chicken wings glazed in sweet and savory teriyaki sauce.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Teriyaki Wings</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/wings/Lemon Pepper Wings.jpg">
+                            <div class="layer">
+                                <h3>Lemon Pepper Wings</h3>
+                                <p>Refresh your palate with our Lemon Pepper Wings, featuring crispy chicken wings seasoned with zesty lemon pepper seasoning.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Lemon Pepper Wings</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/wings/Sriracha Lime Wings.jpg">
+                            <div class="layer">
+                                <h3>Sriracha Lime Wings</h3>
+                                <p>Add a kick to your meal with our Sriracha Lime Wings, featuring crispy chicken wings tossed in spicy Sriracha sauce and zesty lime juice.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Sriracha Lime Wings</h2>
+                    </div>
+                    <div class="food-items">
+                        <div class="food">
+                            <img src="pictures/wings/Maple Bourbon Glazed Wings.jpg">
+                            <div class="layer">
+                                <h3>Maple Bourbon Glazed Wings</h3>
+                                <p>Indulge in luxury with our Maple Bourbon Glazed Wings, featuring crispy chicken wings glazed in rich maple bourbon sauce.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Maple Bourbon Glazed Wings</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--divider-->
+<div id="divider-b-c">BEST FRIEND FRIES RESTO : FOOD AND DRINKS</div>
+<footer>
+    <div class="footer_container">
+      <div class="footer_items">
+        <div class="fbranding">
+            <div class="footer-logo">
+                <h1><div class="flogo-11">BFF</div><div class="flogo-12">RESTO</div></h1>
+            </div>
+            <p>Every meal is a celebration of friendship and flavor!</p>
+        </div>
+      </div>
+        <div class="footer_items">
+            <div class="footer-items">
+                <div class="fc">
+                    <a href="#home">Home</a>
+                    <a onclick="about()">About</a>
+                    <a onclick="menu()"> Menu </a>
+                    <a onclick="contact()">Contacts</a>
+                    <a onclick="order()">Orders</a>
+                </div>
+            <div class="fc">
+                <a onclick="menu()">Burgers</a>
+                <a onclick="menu()">Fries</a>
+                <a onclick="menu()">Drinks</a>
+                <a onclick="menu()">Salad</a>
+                <a onclick="menu()">Wings</a>
+                <a onclick="menu()">Desserts</a>
+            </div>
+        </div>
+        </div>
+            <div class="footer_items">
+                <div class="footer-credits">
+                    <p>This website consists of six HTML files, a single CSS file, and one JavaScript file. This project was primarily developed for educational purposes, aimed at enhancing our understanding of web development concepts and techniques. Through this hands-on approach, we delve into various aspects of front-end development, including structuring content, styling with CSS, and enhancing interactivity with JavaScript. Our goal is to gain practical experience and proficiency in building dynamic and engaging web applications.</p>
+                    <div class="footer-icons">
+                        <img src="pictures/icons/facebook-icon.svg" type="image/png" class="footer-links">
+                        <img src="pictures/icons/instagram-icon.svg" type="image/png" class="footer-links">
+                        <img src="pictures/icons/reddit-icon.svg" type="image/png" class="footer-links">
+                        <img src="pictures/icons/twitter-icon.svg" type="image/png" class="footer-links">
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>    
+    <hr>
+    <h4>CS 402 || Website Programming and Development || Final Case</h4>
+</footer>
+</html>

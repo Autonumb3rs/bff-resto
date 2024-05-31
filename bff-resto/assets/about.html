@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFF RESTO</title>
+    <link rel="icon" type="image/png" href="pictures/presets/burger_icon.png"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body id="about">
+<!--navbtns-->
+    <nav id="navigation"> 
+        <div class="home-logo">
+            <h1 onclick="refresh()"><div class="hlogo-11">BFF</div><div class="hlogo-12">RESTO</div></h1>
+            </div>
+        </div>
+        <ul>
+            <li><a onclick="home()">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a onclick="menu()">Menu</a></li>
+            <li><a onclick="contact()">Contacts</a></li>
+            <li><a onclick="logout()">Logout</a></li>
+            <li><a class="Ordering" onclick="order()">Order Now</a></li>
+        </ul>
+    </nav>
+    <div id="about-top">
+        <div>
+            <h1>All About Us</h1>
+            <p>There's something for everyone! Check out our tasty offers!
+            </p>
+        </div>
+    </div>
+<!--divider-->
+    <div id="divider-a-t">BEST FRIEND FRIES RESTO : FOOD AND DRINKS</div>
+<!--AboutContent--> 
+    <div class="about-play">
+        <div class="about-featured">
+            <div class="about-video">
+                <video autoplay loop muted playsinline class="r-video">
+                    <source src="pictures/presets/burger_ad.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="about-htext">
+                <h1 id="about-title">About</h1>
+                <p id="about-text">About text for item 1.</p>
+                <button id="next-button" onclick="showNextAbout()">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="our-story">
+        <div>
+            <div class="story-container">
+                <img src="pictures/presets/aboutus(1).jpg" class="story-pic">
+                <div class="story-details">
+                    <h2>A CULINARY JOURNEY UNLIKE ANY OTHER</h2>
+                    <article>Crafting Memorable Dining Experiences</article>
+                    <p>At BFF-RESTO, we believe that dining is more than just eating – it's about creating lasting memories. From the moment you step into our restaurant, located in the vibrant heart of Metro Manila, you're embarking on a culinary journey like no other. Our passion for food and commitment to warm hospitality ensure that every visit to BFF-RESTO is an experience to remember.</p>
+                </div>
+            </div>
+            <div class="story-container">
+                <img src="pictures/presets/aboutus(2).jpg" class="story-pic">
+                <div class="story-details">
+                    <h2>INDULGE IN DELICIOUS CREATIONS</h2>
+                    <article>Exploring Our Mouthwatering Menu</article>
+                    <p>Prepare your taste buds for a treat like never before! Our menu features an array of delectable dishes, each one meticulously crafted to delight and satisfy. Whether you're craving the bold flavors of our sizzling BBQ Burger or the comforting crunch of our Classic Fries, every bite at BFF-RESTO is a symphony of taste and texture. Explore our menu and embark on a culinary adventure that's sure to tantalize your senses.</p>
+                </div>
+            </div>
+            <div class="story-container">
+                <img src="pictures/presets/aboutus(3).jpg" class="story-pic">
+                <div class="story-details">
+                    <h2>EXPERIENCE A COZY YET VIBRANT AMBIANCE</h2>
+                    <article>Immerse Yourself in Ambiance and Community</article>
+                    <p>Step into BFF-RESTO and feel the warmth of our cozy yet vibrant atmosphere envelop you. It's not just about the food; it's about the entire dining experience. Our attentive service, inviting ambiance, and sense of community create the perfect backdrop for unforgettable moments with friends and family. Whether you're catching up over coffee or savoring a leisurely meal, every visit to BFF-RESTO is a chance to create cherished memories.</p>
+                </div>
+            </div>
+            <div class="story-container">
+                <img src="pictures/presets/aboutus(4).jpg" class="story-pic">
+                <div class="story-details">
+                    <h2>CONVENIENT ORDERING OPTIONS</h2>
+                    <article>Enjoy Your Favorites Anywhere</article>
+                    <p>Life can get busy, but that doesn't mean you have to sacrifice great food. At BFF-RESTO, we offer convenient ordering options so you can enjoy your favorite dishes wherever you are. Whether you're stuck at the office or relaxing at home, just a few clicks are all it takes to have our flavorsome creations delivered right to your doorstep. Take the stress out of mealtime and let BFF-RESTO bring deliciousness to you.</p>
+                </div>
+            </div>
+            <div class="story-container">
+                <img src="pictures/presets/aboutus(5).jpg" class="story-pic">
+                <div class="story-details">
+                    <h2>CELEBRATE FRIENDSHIP, FLAVOR, AND FUN</h2>
+                    <article>Join the Celebration</article>
+                    <p>At BFF-RESTO, every meal is a celebration – of friendship, flavor, and fun. Gather your loved ones and join us for an unforgettable dining experience filled with laughter, good food, and cherished moments. From birthdays to anniversaries, or simply a spontaneous get-together, BFF-RESTO is the perfect place to celebrate life's special moments. Come be a part of our culinary family and let us make your dining experience truly special.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!--divider-->
+<div id="divider-b-c">BEST FRIEND FRIES RESTO : FOOD AND DRINKS</div>
+<footer>
+    <div class="footer_container">
+      <div class="footer_items">
+        <div class="fbranding">
+            <div class="footer-logo">
+                <h1><div class="flogo-11">BFF</div><div class="flogo-12">RESTO</div></h1>
+            </div>
+            <p>Every meal is a celebration of friendship and flavor!</p>
+        </div>
+      </div>
+        <div class="footer_items">
+            <div class="footer-items">
+                <div class="fc">
+                    <a onclick="home()">Home</a>
+                    <a href="#about">About</a>
+                    <a onclick="menu()"> Menu </a>
+                    <a onclick="contact()">Contacts</a>
+                    <a onclick="order()">Orders</a>
+                </div>
+            <div class="fc">
+                <a onclick="menu()">Burgers</a>
+                <a onclick="menu()">Fries</a>
+                <a onclick="menu()">Drinks</a>
+                <a onclick="menu()">Salad</a>
+                <a onclick="menu()">Wings</a>
+                <a onclick="menu()">Desserts</a>
+            </div>
+        </div>
+        </div>
+            <div class="footer_items">
+                <div class="footer-credits">
+                    <p>This website consists of six HTML files, a single CSS file, and one JavaScript file. This project was primarily developed for educational purposes, aimed at enhancing our understanding of web development concepts and techniques. Through this hands-on approach, we delve into various aspects of front-end development, including structuring content, styling with CSS, and enhancing interactivity with JavaScript. Our goal is to gain practical experience and proficiency in building dynamic and engaging web applications.</p>
+                    <div class="footer-icons">
+                        <img src="pictures/icons/facebook-icon.svg" type="image/png" class="footer-links">
+                        <img src="pictures/icons/instagram-icon.svg" type="image/png" class="footer-links">
+                        <img src="pictures/icons/reddit-icon.svg" type="image/png" class="footer-links">
+                        <img src="pictures/icons/twitter-icon.svg" type="image/png" class="footer-links">
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>    
+    <hr>
+    <h4>CS 402 || Website Programming and Development || Final Case</h4>
+</footer>
+</html>
